@@ -11,8 +11,10 @@ RUN DEBIAN_FRONTEND=noninteractive apt-get update && apt-get -y --no-install-rec
 
 RUN curl -sL https://deb.nodesource.com/setup_14.x | bash -
 RUN apt-get install nodejs
-RUN node --version
 RUN npm install -g yarn
+RUN node --version
+RUN npm --version
+RUN yarn --version
 
 RUN pip3 install awscli
 
